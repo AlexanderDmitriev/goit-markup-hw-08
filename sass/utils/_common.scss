@@ -1,0 +1,163 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+}
+
+/**Небольшой RESET после нормализации*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.link {
+  text-decoration: none;
+
+  transition-property: color, fill;
+  transition-duration: var(--timing);
+  transition-timing-function: var(--cubik);
+  &:hover,
+  &:focus {
+    color: var(--second-color);
+    fill: var(--second-color);
+  }
+}
+
+.policy-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--second-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/**Общий контейнер для элементов макета**/
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.caption {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  margin-bottom: 50px;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--light-text-color);
+  letter-spacing: 0.06em;
+  background-color: var(--second-color);
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+}
+
+.button--hero {
+  margin-top: 30px;
+}
+.button--footer {
+  align-items: center;
+  padding: 5px 26px;
+  display: inline-flex;
+  position: relative;
+  border: none;
+  & > .injoy-mailing-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon-send.svg);
+    margin-left: 10px;
+  }
+}
+
+.button--submit {
+  align-items: center;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+.close-button {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: unset;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+
+  top: 8px;
+  right: 8px;
+
+  transition-property: fill, border-color;
+  transition-duration: var(--timing);
+  transition-timing-function: var(--cubik);
+  &:hover {
+    fill: var(--second-color);
+    border-color: var(--second-color);
+  }
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.checkbox:checked + .checkbox-label::before {
+  background-color: #2196f3;
+  background-image: url(../images/yes.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+}
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    margin-right: 5px;
+  }
+}

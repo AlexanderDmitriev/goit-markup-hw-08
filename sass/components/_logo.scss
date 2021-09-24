@@ -1,0 +1,21 @@
+.logo {
+  @include text-decoration(700, 26px, 1.2, #000000);
+
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+}
+.logo--upper {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+}
+
+.logo--accent {
+  color: var(--second-color);
+}
+.logo--dark {
+  color: #000000;
+}
+.logo--light {
+  color: var(--light-text-color);
+}

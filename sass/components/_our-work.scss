@@ -1,0 +1,26 @@
+/***********************Чем мы занимаемся**************************************/
+
+.our-work {
+  padding-bottom: 94px;
+}
+.our-work__picture {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.our-work__text {
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+
+  @include text-decoration(700, 14px, 1.14, var(--light-text-color));
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+}

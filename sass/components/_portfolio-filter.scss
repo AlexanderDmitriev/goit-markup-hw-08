@@ -1,0 +1,31 @@
+.projects-filter {
+  justify-content: center;
+  margin-bottom: 50px;
+  & li:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.projects-filter__item {
+  @include text-decoration(500, 16px, 1.62, #f5f4fa);
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  color: var(--secondary-text-color);
+  cursor: pointer;
+  border-color: transparent;
+  padding: 6px 22px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: var(--timing);
+  transition-timing-function: var(--cubik);
+
+  &:hover,
+  &:focus {
+    color: var(--light-text-color);
+    background-color: var(--second-color);
+    box-shadow: 1px 1px 5px var(--company-color);
+  }
+}

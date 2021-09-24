@@ -1,0 +1,22 @@
+/**Герой**/
+.hero {
+  background: var(--outside-background-color);
+  flex-grow: 1;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero__text {
+  @include text-decoration(900, 44px, 1.36, var(--light-text-color));
+  text-transform: uppercase;
+}

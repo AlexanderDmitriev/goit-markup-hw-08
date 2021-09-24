@@ -1,0 +1,52 @@
+/************Секция "О нас"*******************/
+.about-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  display: flex;
+}
+.about {
+  display: flex;
+}
+
+.about__topic {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-color: #f5f4fa;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
+
+.about__topic--antenna::before {
+  background-image: url(../images/antenna-svg.svg);
+}
+
+.about__topic--clock::before {
+  background-image: url(../images/clock-svg.svg);
+}
+.about__topic--diagram::before {
+  background-image: url(../images/diagram-svg.svg);
+}
+.about__topic--kosmonaut::before {
+  background-image: url(../images/kosmonaut-svg.svg);
+}
+
+.about_character {
+  @include text-decoration(700, 14px, 1.14, var(--secondary-text-color));
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.about__text {
+  @include text-decoration(400, 14px, 1.71, var(--primary-text-color));
+  letter-spacing: 0.03em;
+  width: 270px;
+}

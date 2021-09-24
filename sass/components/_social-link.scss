@@ -1,0 +1,56 @@
+/******************************Социалки*******************************/
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.social-list__items {
+  content: "";
+  display: inline-block;
+
+  background-size: 22px;
+  background-position: center;
+  fill: var(--light-text-color);
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.social-list__link {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.social-list__link--team {
+  fill: var(--company-color);
+
+  background-color: transparent;
+
+  transition-property: background-color, fill;
+  transition-duration: var(--timing);
+  transition-timing-function: var(--cubik);
+
+  &:hover,
+  &:focus {
+    background-color: var(--second-color);
+    fill: var(--light-text-color);
+  }
+}
+
+.social-list__link--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--light-text-color);
+
+  transition-property: background-color;
+  transition-duration: var(--timing);
+  transition-timing-function: var(--cubik);
+
+  &:hover,
+  &:focus {
+    background-color: var(--second-color);
+  }
+}

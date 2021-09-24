@@ -1,0 +1,32 @@
+/****************************Наша команда******************************/
+.team {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  background-color: #f5f4fa;
+}
+
+.team__list {
+  box-shadow: 1px 1px 5px var(--company-color);
+  border-radius: 4px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team__info {
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+.team__name {
+  @include text-decoration(500, 16px, 1.19, var(--secondary-text-color));
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  padding-bottom: 10px;
+}
+
+.team__role {
+  @include text-decoration(400, 16px, 1.19, var(--primary-text-color));
+  letter-spacing: 0.03em;
+  text-align: center;
+}
