@@ -2,6 +2,10 @@
 
 .our-work {
   padding-bottom: 94px;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 .our-work__picture {
   position: relative;

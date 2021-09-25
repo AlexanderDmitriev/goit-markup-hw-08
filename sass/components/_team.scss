@@ -1,15 +1,20 @@
 /****************************Наша команда******************************/
 .team {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  margin-bottom: 60px;
+  /**padding-bottom: 94px;
+  padding-top: 94px;*/
   background-color: #f5f4fa;
 }
 
 .team__list {
   box-shadow: 1px 1px 5px var(--company-color);
   border-radius: 4px;
+  margin: 0 auto;
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
+    /*margin-right: 30px;**/
   }
 }
 

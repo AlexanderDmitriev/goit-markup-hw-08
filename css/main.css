@@ -71,10 +71,12 @@ ul {
 
 /**Общий контейнер для элементов макета**/
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  /*
+  width: 1200px;*/
 }
 
 .content {
@@ -84,12 +86,14 @@ ul {
 
 .caption {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
+  /**font-size: 36px;*/
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  /**margin-bottom: 50px;*/
 }
 
 .button {
@@ -297,36 +301,64 @@ input[type="radio"] {
   background: var(--outside-background-color);
   flex-grow: 1;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 60px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/hero-mobile-1x.jpg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  /**padding-top: 200px;
+  padding-bottom: 200px;*/
+  /*background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;*/
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-size: contain;
+  }
 }
 
 .hero__text {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 23px;
+  line-height: 1.61;
   font-style: normal;
   color: var(--light-text-color);
+  /**@include text-decoration(900, 44px, 1.36, var(--light-text-color));*/
   text-transform: uppercase;
 }
 
 /************Секция "О нас"*******************/
 .about-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /*padding-top: 94px;
+  padding-bottom: 94px;*/
   display: flex;
 }
 
 .about {
-  display: flex;
+  /**display: flex;*/
+  margin: 0 auto;
 }
 
 .about__topic:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+  /**margin-right: 30px;*/
+}
+
+.about__topic:last-child {
+  margin-bottom: 60px;
+  /**margin-right: 30px;*/
 }
 
 .about__topic::before {
@@ -334,9 +366,9 @@ input[type="radio"] {
   display: block;
   height: 120px;
   background-color: #f5f4fa;
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -357,6 +389,7 @@ input[type="radio"] {
 }
 
 .about_character {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -374,12 +407,19 @@ input[type="radio"] {
   font-style: normal;
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
-  width: 270px;
+  /**width: 270px;*/
 }
 
 /***********************Чем мы занимаемся**************************************/
 .our-work {
   padding-bottom: 94px;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .our-work {
+    display: block;
+  }
 }
 
 .our-work__picture {
@@ -410,18 +450,23 @@ input[type="radio"] {
 
 /****************************Наша команда******************************/
 .team {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  margin-bottom: 60px;
+  /**padding-bottom: 94px;
+  padding-top: 94px;*/
   background-color: #f5f4fa;
 }
 
 .team__list {
   box-shadow: 1px 1px 5px var(--company-color);
   border-radius: 4px;
+  margin: 0 auto;
 }
 
 .team__list:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+  /*margin-right: 30px;**/
 }
 
 .team__info {
@@ -505,35 +550,44 @@ input[type="radio"] {
 
 /*********************Наши клиенты*******************************/
 .clients {
-  padding-top: 100px;
+  /*padding-top: 100px;*/
 }
 
 .our-clients {
+  /**@include text-decoration(700, 36px, 1.17, currentColor);*/
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   font-style: normal;
   color: currentColor;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 
 .clients-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 94px;
+  flex-wrap: wrap;
+  /**padding-bottom: 94px;*/
+}
+
+.clients-list__item {
+  display: flex;
+  flex-basis: 50%;
+  margin-bottom: 30px;
+  justify-content: center;
 }
 
 /**Это относится к элементу li-ки, а не к самомму ul**/
-.clients-list__item:not(:last-child) {
+/*.clients-list__item:not(:last-child) {
   margin-right: 30px;
-}
-
+}*/
 .clients-list__company {
   content: "";
   height: 92px;
-  width: 170px;
+  min-width: 150px;
+  /**width: 170px;*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -543,6 +597,12 @@ input[type="radio"] {
   transition-property: fill, border;
   transition-duration: var(--timing);
   transition-timing-function: var(--cubik);
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list__company {
+    width: 210px;
+  }
 }
 
 .clients-list__company:hover, .clients-list__company:focus {
@@ -558,11 +618,13 @@ footer {
 }
 
 .foot {
-  display: flex;
+  /**display: flex;*/
+  text-align: center;
 }
 
 .address-ccs {
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .foot__adress {
@@ -590,8 +652,8 @@ footer {
 }
 
 .injoy-sector {
-  margin-left: 70px;
-  margin-top: 12px;
+  /**margin-left: 70px;*/
+  margin-bottom: 60px;
 }
 
 .injoy-sector__title {
@@ -605,23 +667,25 @@ footer {
 }
 
 .injoy-mailing {
-  margin-left: 103px;
+  /**margin-left: 103px;*/
   margin-top: 12px;
 }
 
 .injoy-mailing__text-form {
-  display: flex;
+  /**display: flex;*/
 }
 
 .injoy-mailing__input-class {
   height: 50px;
-  width: 358px;
+  width: 100%;
+  /**width: 358px;*/
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid var(--primary-text-color);
   padding: 16px 15px;
   color: var(--primary-text-color);
   margin-right: 12px;
+  margin-bottom: 20px;
 }
 
 .injoy-mailing__input-class::placeholder {

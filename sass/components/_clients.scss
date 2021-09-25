@@ -1,28 +1,42 @@
 /*********************Наши клиенты*******************************/
 .clients {
-  padding-top: 100px;
+  /*padding-top: 100px;*/
 }
 .our-clients {
-  @include text-decoration(700, 36px, 1.17, currentColor);
+  /**@include text-decoration(700, 36px, 1.17, currentColor);*/
+  @include text-decoration(700, 28px, 1.17, currentColor);
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 .clients-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 94px;
+  flex-wrap: wrap;
+
+  /**padding-bottom: 94px;*/
 }
 
-/**Это относится к элементу li-ки, а не к самомму ul**/
-.clients-list__item:not(:last-child) {
-  margin-right: 30px;
+.clients-list__item {
+  display: flex;
+  flex-basis: 50%;
+  margin-bottom: 30px;
+  justify-content: center;
 }
+/**Это относится к элементу li-ки, а не к самомму ul**/
+/*.clients-list__item:not(:last-child) {
+  margin-right: 30px;
+}*/
 
 .clients-list__company {
   content: "";
   height: 92px;
-  width: 170px;
+  min-width: 150px;
+
+  @media screen and (min-width: 480px) {
+    width: 210px;
+  }
+  /**width: 170px;*/
   display: flex;
   align-items: center;
   justify-content: center;

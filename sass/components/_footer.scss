@@ -5,11 +5,13 @@ footer {
   padding-bottom: 60px;
 }
 .foot {
-  display: flex;
+  /**display: flex;*/
+  text-align: center;
 }
 
 .address-ccs {
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .foot__adress {
@@ -36,8 +38,8 @@ footer {
   }
 }
 .injoy-sector {
-  margin-left: 70px;
-  margin-top: 12px;
+  /**margin-left: 70px;*/
+  margin-bottom: 60px;
 }
 
 .injoy-sector__title {
@@ -52,23 +54,25 @@ footer {
 }
 
 .injoy-mailing {
-  margin-left: 103px;
+  /**margin-left: 103px;*/
   margin-top: 12px;
 }
 
 .injoy-mailing__text-form {
-  display: flex;
+  /**display: flex;*/
 }
 
 .injoy-mailing__input-class {
   height: 50px;
-  width: 358px;
+  width: 100%;
+  /**width: 358px;*/
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid var(--primary-text-color);
   padding: 16px 15px;
   color: var(--primary-text-color);
   margin-right: 12px;
+  margin-bottom: 20px;
   &::placeholder {
     font-weight: normal;
     font-size: 16px;
