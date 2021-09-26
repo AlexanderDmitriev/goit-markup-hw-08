@@ -155,6 +155,20 @@ ul {
   border-color: var(--second-color);
 }
 
+.mobile-menu {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: unset;
+  align-items: center;
+}
+
+.button-burger {
+  width: 40px;
+  height: 40px;
+}
+
 input[type="radio"] {
   display: none;
 }
@@ -183,6 +197,7 @@ input[type="radio"] {
 
 .heading {
   display: flex;
+  justify-content: space-between;
 }
 
 .header-navigation__link {
@@ -268,6 +283,14 @@ input[type="radio"] {
   color: var(--second-color);
 }
 
+.mobile-menu .menu-close {
+  display: none;
+}
+
+.mobile-menu.is-open .menu-close {
+  display: block;
+}
+
 .logo {
   font-weight: 700;
   font-size: 26px;
@@ -279,9 +302,11 @@ input[type="radio"] {
 }
 
 .logo--upper {
-  padding-top: 24px;
+  /**padding-top: 24px;
   padding-bottom: 24px;
-  margin-right: 93px;
+  margin-right: 93px;*/
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .logo--accent {

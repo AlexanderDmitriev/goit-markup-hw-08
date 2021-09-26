@@ -1,5 +1,6 @@
 .heading {
   display: flex;
+  justify-content: space-between;
 }
 .header-navigation__link {
   display: block;
@@ -67,4 +68,10 @@
       color: var(--second-color);
     }
   }
+}
+.mobile-menu .menu-close {
+  display: none;
+}
+.mobile-menu.is-open .menu-close {
+  display: block;
 }
