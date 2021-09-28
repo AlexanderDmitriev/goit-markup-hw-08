@@ -16,8 +16,16 @@
 }
 
 .modal {
-  min-width: 528px;
-  min-height: 581px;
+  /**min-width: 528px;
+  min-height: 581px;*/
+  min-width: 320px;
+  min-height: 609px;
+  @media screen and (min-width: 480px) {
+    min-width: 450px;
+    min-height: 609px;
+    transform: translate(50%, 50%);
+  }
+
   background-color: var(--light-text-color);
 
   position: absolute;
@@ -114,7 +122,11 @@
 .modal__field-policy {
   display: block;
   margin-bottom: 30px;
-  font-size: 14px;
+  font-size: 7px;
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+  }
+  /**font-size: 14px;*/
   line-height: 1.17;
   letter-spacing: 0.03em;
 

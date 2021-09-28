@@ -38,7 +38,11 @@ ul {
 }
 
 .policy-link {
-  font-size: 14px;
+  /**font-size: 14px;*/
+  font-size: 7px;
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+  }
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
@@ -151,9 +155,9 @@ ul {
 }
 
 .button-burger {
-  width: 40px;
-  height: 40px;
+  margin-top: 10px;
 }
+
 input[type="radio"] {
   display: none;
 }
@@ -170,9 +174,15 @@ input[type="radio"] {
   align-items: center;
   &::before {
     content: "";
-    width: 15px;
-    height: 15px;
-    border: 2px solid #000000;
+    width: 7px;
+    height: 7px;
+    @media screen and (min-width: 480px) {
+      width: 8px;
+      height: 8px;
+    }
+    /**width: 15px;
+    height: 15px;*/
+    border: 1px solid #000000;
     border-radius: 2px;
     margin-right: 5px;
   }
