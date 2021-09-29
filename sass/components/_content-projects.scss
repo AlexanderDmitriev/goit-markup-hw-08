@@ -9,6 +9,9 @@
 
 .content-projects {
   width: calc(100vw - 30px);
+  @media screen and (min-width: 767px) {
+    width: calc((100vw - 30px) / 2);
+  }
   position: relative;
   /**margin-right: 30px;*/
   margin-bottom: 30px;

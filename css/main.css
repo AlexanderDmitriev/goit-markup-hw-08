@@ -1095,6 +1095,12 @@ footer {
   transition-timing-function: var(--cubik);
 }
 
+@media screen and (min-width: 767px) {
+  .content-projects {
+    width: calc((100vw - 30px) / 2);
+  }
+}
+
 .content-projects:hover, .content-projects:focus {
   box-shadow: 1px 1px 5px var(--company-color);
   border-radius: 4px;
