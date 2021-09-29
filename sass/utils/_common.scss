@@ -181,8 +181,11 @@ input[type="radio"] {
       width: 8px;
       height: 8px;
     }
-    /**width: 15px;
-    height: 15px;*/
+    @media screen and (min-width: 767px) {
+      width: 15px;
+      height: 15px;
+    }
+    /***/
     border: 1px solid #000000;
     border-radius: 2px;
     margin-right: 5px;
