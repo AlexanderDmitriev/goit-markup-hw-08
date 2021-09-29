@@ -1,6 +1,6 @@
 .projects-filter {
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   & li:not(:last-child) {
     margin-right: 8px;
   }
@@ -17,6 +17,7 @@
   padding: 6px 22px;
   border-radius: 4px;
   background-color: #f5f4fa;
+  margin-bottom: 15px;
 
   transition-property: color, background-color, box-shadow;
   transition-duration: var(--timing);
