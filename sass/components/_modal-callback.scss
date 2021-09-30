@@ -16,14 +16,17 @@
 }
 
 .modal {
-  /**min-width: 528px;
-  min-height: 581px;*/
+  /***/
   min-width: 320px;
   /*min-height: 609px;*/
   height: 100vh;
 
   @media screen and (min-width: 480px) {
     min-width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
   }
 
   background-color: var(--light-text-color);
@@ -127,11 +130,16 @@
   @media screen and (min-width: 480px) {
     font-size: 12px;
   }
-  /**font-size: 14px;*/
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    margin-left: 13px;
+  }
+  /***/
   line-height: 1.17;
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
   margin-top: 20px;
-  /**margin-left: 13px;*/
+  /**;*/
 }
