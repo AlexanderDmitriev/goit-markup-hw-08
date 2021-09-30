@@ -3,8 +3,11 @@
   padding-bottom: 60px;
   padding-top: 60px;
   margin-bottom: 60px;
-  /**padding-bottom: 94px;
-  padding-top: 94px;*/
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+  /**;*/
   background-color: #f5f4fa;
 }
 
@@ -22,8 +25,13 @@
     }
   }
 
-  &:not(:nth-child(2n)) {
-    @media screen and (min-width: 767px) {
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
       margin-right: 30px;
     }
   }
