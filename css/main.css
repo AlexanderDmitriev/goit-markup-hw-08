@@ -1087,32 +1087,37 @@ footer {
 .content-projects {
   width: calc(100vw - 30px);
   position: relative;
-  /**margin-right: 30px;*/
+  /**;*/
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   transition-property: box-shadow, order-radius;
   transition-duration: var(--timing);
   transition-timing-function: var(--cubik);
+  /**&:nth-child(3n) {
+    margin-right: -30px;
+  }**/
+  /*&:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }**/
 }
 
 @media screen and (min-width: 767px) {
   .content-projects {
-    width: calc((100vw - 30px) / 2);
+    width: calc((100vw - 60px) / 2);
+    margin-right: 30px;
+  }
+  .content-projects:nth-child(2n) {
+    margin-right: -30px;
+  }
+  .content-projects:last-child {
+    margin-bottom: 0;
   }
 }
 
 .content-projects:hover, .content-projects:focus {
   box-shadow: 1px 1px 5px var(--company-color);
   border-radius: 4px;
-}
-
-.content-projects:nth-child(3n) {
-  margin-right: -30px;
-}
-
-.content-projects:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 .thumb {
@@ -1167,6 +1172,14 @@ footer {
   font-style: normal;
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 767px) {
+  .projects-list {
+    display: flex;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+  }
 }
 
 /******************* Модалка********/
