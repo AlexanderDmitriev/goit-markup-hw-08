@@ -1077,8 +1077,14 @@ footer {
 }
 
 .foot {
-  /**display: flex;*/
+  /***/
   text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+  .foot {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 767px) {
@@ -1090,9 +1096,22 @@ footer {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .foot__left--tablet {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .address-ccs {
   margin-top: 20px;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address-ccs {
+    margin-bottom: 0;
+  }
 }
 
 .foot__adress {
@@ -1120,8 +1139,15 @@ footer {
 }
 
 .injoy-sector {
-  /**margin-left: 70px;*/
+  /***/
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .injoy-sector {
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .injoy-sector__title {
@@ -1135,12 +1161,25 @@ footer {
 }
 
 .injoy-mailing {
-  /**margin-left: 103px;*/
+  /***/
   margin-top: 12px;
 }
 
+@media screen and (min-width: 1200px) {
+  .injoy-mailing {
+    margin-left: 93px;
+    margin-top: 0;
+  }
+}
+
 .injoy-mailing__text-form {
-  /**display: flex;*/
+  /***/
+}
+
+@media screen and (min-width: 1200px) {
+  .injoy-mailing__text-form {
+    display: flex;
+  }
 }
 
 .injoy-mailing__input-class {
@@ -1160,6 +1199,14 @@ footer {
     width: 450px;
     display: block;
     margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .injoy-mailing__input-class {
+    width: 358px;
+    margin: 0;
+    margin-right: 12px;
   }
 }
 

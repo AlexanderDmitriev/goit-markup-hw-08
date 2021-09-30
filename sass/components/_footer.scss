@@ -5,8 +5,11 @@ footer {
   padding-bottom: 60px;
 }
 .foot {
-  /**display: flex;*/
+  /***/
   text-align: center;
+  @media screen and (min-width: 767px) {
+    display: flex;
+  }
 }
 
 .foot__left--tablet {
@@ -16,11 +19,18 @@ footer {
     margin-right: 79px;
     justify-content: space-between;
   }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .address-ccs {
   margin-top: 20px;
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .foot__adress {
@@ -47,8 +57,12 @@ footer {
   }
 }
 .injoy-sector {
-  /**margin-left: 70px;*/
+  /***/
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .injoy-sector__title {
@@ -63,12 +77,19 @@ footer {
 }
 
 .injoy-mailing {
-  /**margin-left: 103px;*/
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    margin-top: 0;
+  }
+  /***/
   margin-top: 12px;
 }
 
 .injoy-mailing__text-form {
-  /**display: flex;*/
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+  /***/
 }
 
 .injoy-mailing__input-class {
@@ -78,6 +99,11 @@ footer {
     width: 450px;
     display: block;
     margin: 20px auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin: 0;
+    margin-right: 12px;
   }
   background-color: transparent;
   border-radius: 4px;
