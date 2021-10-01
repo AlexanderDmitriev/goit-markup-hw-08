@@ -10,6 +10,9 @@ footer {
   @media screen and (min-width: 767px) {
     display: flex;
   }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .foot__left--tablet {

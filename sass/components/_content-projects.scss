@@ -13,7 +13,9 @@
 }
 
 .content-projects {
-  width: calc(100vw - 30px);
+  /** width: calc(100vw - 30px);*/
+  width: 100vw;
+  margin: 0 auto;
 
   @media screen and (min-width: 767px) and (max-width: 1199px) {
     width: calc((100vw - 60px) / 2);
@@ -65,6 +67,14 @@
   &:hover .content-projects__topic {
     opacity: 1;
     transform: translateY(-100%);
+  }
+}
+
+.content-projects__picture {
+  @media screen and (max-width: 767px) {
+    width: calc(100vw - 30px);
+    height: auto;
+    object-fit: cover;
   }
 }
 

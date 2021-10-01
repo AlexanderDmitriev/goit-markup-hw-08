@@ -107,13 +107,20 @@ ul {
 .caption {
   font-weight: 700;
   font-size: 28px;
-  /**font-size: 36px;*/
+  /***/
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-bottom: 30px;
-  /**margin-bottom: 50px;*/
+  /***/
+}
+
+@media screen and (min-width: 1200px) {
+  .caption {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .button {
@@ -587,8 +594,8 @@ input[type="radio"] {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-bottom: 60px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/hero-mobile-1x.jpg);
+  /**margin-bottom: 60px;*/
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile-1x.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -607,13 +614,13 @@ input[type="radio"] {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/hero-mobile-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile-2x.jpg);
   }
 }
 
 @media screen and (min-width: 767px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/hero-tablet-1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet-1x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -624,13 +631,13 @@ input[type="radio"] {
 
 @media screen and (min-width: 767px) and (min-device-pixel-ratio: 2) and (min-width: 767px), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/hero-tablet-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet-2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/hero-desktop-1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop-1x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -641,7 +648,7 @@ input[type="radio"] {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/hero-desktop-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop-2x.jpg);
   }
 }
 
@@ -776,6 +783,12 @@ input[type="radio"] {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 767px) {
+  .about_character {
+    text-align: start;
+  }
+}
+
 .about__text {
   font-weight: 400;
   font-size: 14px;
@@ -843,6 +856,7 @@ input[type="radio"] {
   box-shadow: 1px 1px 5px var(--company-color);
   border-radius: 4px;
   align-items: center;
+  background-color: #fff;
 }
 
 .team__list:not(:last-child) {
@@ -977,6 +991,7 @@ input[type="radio"] {
     line-height: 1.17;
     font-style: normal;
     color: currentColor;
+    margin-bottom: 50px;
   }
 }
 
@@ -1069,6 +1084,12 @@ footer {
 @media screen and (min-width: 767px) {
   .foot {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .foot {
+    text-align: start;
   }
 }
 
@@ -1204,12 +1225,18 @@ footer {
 }
 
 .projects-filter {
-  justify-content: center;
+  justify-content: start;
   margin-bottom: 40px;
 }
 
 .projects-filter li:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (min-width: 767px) {
+  .projects-filter {
+    justify-content: center;
+  }
 }
 
 .projects-filter__item {
@@ -1255,7 +1282,9 @@ footer {
 }
 
 .content-projects {
-  width: calc(100vw - 30px);
+  /** width: calc(100vw - 30px);*/
+  width: 100vw;
+  margin: 0 auto;
   position: relative;
   /**;*/
   margin-bottom: 30px;
@@ -1311,6 +1340,14 @@ footer {
 .thumb:hover .content-projects__topic {
   opacity: 1;
   transform: translateY(-100%);
+}
+
+@media screen and (max-width: 767px) {
+  .content-projects__picture {
+    width: calc(100vw - 30px);
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 .content-projects__topic {

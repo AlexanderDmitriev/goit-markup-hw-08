@@ -87,13 +87,17 @@ ul {
 .caption {
   font-weight: 700;
   font-size: 28px;
-  /**font-size: 36px;*/
+  /***/
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-bottom: 30px;
-  /**margin-bottom: 50px;*/
+  /***/
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .button {
