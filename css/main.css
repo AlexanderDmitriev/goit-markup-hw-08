@@ -1028,6 +1028,7 @@ input[type="radio"] {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1047,6 +1048,9 @@ input[type="radio"] {
 @media screen and (min-width: 767px) {
   .clients-list__item {
     flex-basis: 33%;
+  }
+  .clients-list__item:nth-child(n + 4) {
+    margin-bottom: 0;
   }
 }
 
@@ -1452,7 +1456,7 @@ footer {
 .modal {
   /***/
   min-width: 320px;
-  /*min-height: 609px;*/
+  /**/
   height: 100vh;
   background-color: var(--light-text-color);
   position: absolute;
@@ -1466,13 +1470,14 @@ footer {
 @media screen and (min-width: 480px) {
   .modal {
     min-width: 450px;
+    height: 609px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
-    min-height: 581px;
+    height: 581px;
   }
 }
 

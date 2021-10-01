@@ -18,15 +18,16 @@
 .modal {
   /***/
   min-width: 320px;
-  /*min-height: 609px;*/
+  /**/
   height: 100vh;
 
   @media screen and (min-width: 480px) {
     min-width: 450px;
+    height: 609px;
   }
   @media screen and (min-width: 1200px) {
     min-width: 528px;
-    min-height: 581px;
+    height: 581px;
   }
 
   background-color: var(--light-text-color);
