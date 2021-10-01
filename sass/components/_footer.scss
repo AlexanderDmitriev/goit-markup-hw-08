@@ -7,11 +7,12 @@ footer {
 .foot {
   /***/
   text-align: center;
-  @media screen and (min-width: 767px) {
-    display: flex;
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    display: block;
   }
   @media screen and (min-width: 1200px) {
     text-align: start;
+    display: flex;
   }
 }
 

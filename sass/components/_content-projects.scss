@@ -14,7 +14,7 @@
 
 .content-projects {
   /** width: calc(100vw - 30px);*/
-  width: 100vw;
+
   margin: 0 auto;
 
   @media screen and (min-width: 767px) and (max-width: 1199px) {
@@ -72,7 +72,7 @@
 
 .content-projects__picture {
   @media screen and (max-width: 767px) {
-    width: calc(100vw - 30px);
+    width: calc(100vw - 40px);
     height: auto;
     object-fit: cover;
   }
