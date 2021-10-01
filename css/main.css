@@ -684,7 +684,6 @@ input[type="radio"] {
 
 /************Секция "О нас"*******************/
 .about-section {
-  /**/
   display: flex;
 }
 
@@ -707,31 +706,8 @@ input[type="radio"] {
   }
 }
 
-.about__topic {
-  /***/
-}
-
 .about__topic:not(:last-child) {
   margin-bottom: 30px;
-}
-
-@media screen and (max-width: 1199px) {
-  .about__topic:last-child {
-    margin-bottom: 60px;
-    /**margin-right: 30px;*/
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .about__topic:not(:nth-child(2n)) {
-    margin-right: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .about__topic:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 
 .about__topic::before {
@@ -748,6 +724,21 @@ input[type="radio"] {
 @media screen and (min-width: 767px) {
   .about__topic {
     width: 354px;
+  }
+  .about__topic:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .about__topic:last-child {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__topic:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -792,7 +783,6 @@ input[type="radio"] {
   font-style: normal;
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
-  /**width: 270px;*/
 }
 
 /***********************Чем мы занимаемся**************************************/
@@ -969,12 +959,7 @@ input[type="radio"] {
 }
 
 /*********************Наши клиенты*******************************/
-.clients {
-  /*padding-top: 100px;*/
-}
-
 .our-clients {
-  /***/
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
@@ -999,7 +984,6 @@ input[type="radio"] {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /***/
 }
 
 @media screen and (min-width: 1200px) {
@@ -1027,10 +1011,6 @@ input[type="radio"] {
     display: block;
     margin: 0 auto;
   }
-}
-
-/**Это относится к элементу li-ки, а не к самомму ul**/
-@media screen and (min-width: 1200px) {
   .clients-list__item:not(:last-child) {
     margin-right: 30px;
   }
@@ -1040,7 +1020,6 @@ input[type="radio"] {
   content: "";
   height: 92px;
   min-width: 150px;
-  /***/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1050,6 +1029,11 @@ input[type="radio"] {
   transition-property: fill, border;
   transition-duration: var(--timing);
   transition-timing-function: var(--cubik);
+}
+
+.clients-list__company:hover, .clients-list__company:focus {
+  fill: var(--second-color);
+  border: 1px solid var(--second-color);
 }
 
 @media screen and (min-width: 480px) {
@@ -1068,11 +1052,6 @@ input[type="radio"] {
   .clients-list__company {
     width: 170px;
   }
-}
-
-.clients-list__company:hover, .clients-list__company:focus {
-  fill: var(--second-color);
-  border: 1px solid var(--second-color);
 }
 
 /**************************footer css**************************/
