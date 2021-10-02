@@ -1,11 +1,15 @@
 .projects-filter {
   justify-content: start;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   & li:not(:last-child) {
     margin-right: 8px;
   }
   @media screen and (min-width: 767px) {
     justify-content: center;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 50px;
   }
 }
 
