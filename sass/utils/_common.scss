@@ -39,7 +39,7 @@ ul {
 
 .policy-link {
   /***/
-  font-size: 7px;
+  font-size: 8px;
   @media screen and (min-width: 480px) {
     font-size: 12px;
   }
@@ -191,17 +191,13 @@ input[type="radio"] {
   align-items: center;
   &::before {
     content: "";
-    width: 7px;
-    height: 7px;
+    width: 9px;
+    height: 9px;
     @media screen and (min-width: 480px) {
-      width: 8px;
-      height: 8px;
-    }
-    @media screen and (min-width: 767px) {
       width: 15px;
       height: 15px;
     }
-    /***/
+
     border: 1px solid #000000;
     border-radius: 2px;
     margin-right: 5px;

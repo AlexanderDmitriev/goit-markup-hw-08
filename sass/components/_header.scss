@@ -71,6 +71,8 @@
 }
 .post-and-phone {
   margin-left: auto;
+  justify-content: center;
+
   @media screen and (max-width: 479px) {
     position: absolute;
     bottom: 100px;
@@ -82,10 +84,9 @@
   }
   @media screen and (min-width: 767px) {
     margin-top: 0;
-    padding-top: 21px;
-    padding-bottom: 21px;
     @include text-decoration(500, 12px, 1.17, currentColor);
     display: block;
+    margin: auto 0;
   }
   @media screen and (min-width: 1200px) {
     @include text-decoration(500, 14px, 1.14, currentColor);
@@ -93,9 +94,7 @@
     align-items: center;
   }
 
-  justify-content: center;
   li:not(:last-child) {
-    margin-bottom: 22px;
     @media screen and (min-width: 480px) and (max-width: 766px) {
       margin-bottom: 32px;
     }
